@@ -1,0 +1,50 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Ambiente virtual ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Variáveis de ambiente (NUNCA commitar!) ---
+.env
+.env.local
+.env.production
+
+# --- Testes ---
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# --- IDE ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Sistema ---
+.DS_Store
+Thumbs.db
+
+# --- Docker ---
+*.override.yml
+
+# --- Logs ---
+*.log
+logs/
+
+# --- Alembic ---
+# (manter as migrations, não ignorar)
+
+# --- Antigravity ---
+.antigravity/cache/
