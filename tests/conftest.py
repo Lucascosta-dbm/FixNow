@@ -25,13 +25,14 @@ def event_loop_policy():
     return asyncio.DefaultEventLoopPolicy()
 
 
-@pytest.fixture(scope="session", autouse=True)
+@pytest.fixture(scope="function", autouse=True)
 async def clean_test_users():
     """Limpa usuários de teste do banco antes de cada sessão de testes."""
     test_emails = (
         "joao@fixnow.com.br",
         "maria@fixnow.com.br",
         "pedro@fixnow.com.br",
+        "carlos@fixnow.com.br",
     )
     async with AsyncSessionLocal() as session:
         await session.execute(

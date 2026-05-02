@@ -7,7 +7,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 from app.core.config import settings
-from app.api.routes import auth, users
+from app.api.routes import auth, users, professionals
 
 # Inicialização da aplicação
 app = FastAPI(
@@ -30,6 +30,7 @@ app.add_middleware(
 # Registro das rotas
 app.include_router(auth.router, prefix=f"{settings.API_PREFIX}/auth", tags=["Autenticação"])
 app.include_router(users.router, prefix=f"{settings.API_PREFIX}/users", tags=["Usuários"])
+app.include_router(professionals.router, prefix=f"{settings.API_PREFIX}/professionals", tags=["Profissionais"])
 
 
 @app.get("/", tags=["Health"])
