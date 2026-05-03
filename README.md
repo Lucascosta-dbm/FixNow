@@ -51,6 +51,22 @@ Cliente (App) → API Gateway → FastAPI
 
 ---
 
+## 📱 Protótipo de Interface
+
+Jornada completa do cliente na plataforma FixNow:
+
+<div align="center">
+
+| Home | Ranking Matching | Trust Score |
+|------|-----------------|-------------|
+| <img src="docs/screenshots/tela-01-home.png" width="200"/> | <img src="docs/screenshots/tela-02-ranking.png" width="200"/> | <img src="docs/screenshots/tela-03-trust-score.png" width="200"/> |
+
+| Rastreamento GPS | Pagamento Escrow | Avaliação |
+|-----------------|-----------------|-----------|
+| <img src="docs/screenshots/tela-04-rastreamento.png" width="200"/> | <img src="docs/screenshots/tela-05-pagamento.png" width="200"/> | <img src="docs/screenshots/tela-06-avaliacao.png" width="200"/> |
+
+</div>
+
 ## 🚀 Como rodar o projeto
 
 ### Pré-requisitos
